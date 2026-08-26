@@ -1,0 +1,29 @@
+/* Self-hosted fonty — warianty zmienne, subset: latin + polskie znaki diakrytyczne.
+
+   Źródło: Google Fonts (Inter, Unbounded — SIL Open Font License 1.1). */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('../fonts/inter.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('../fonts/unbounded.woff2') format('woff2');
+}
+
+/* Wariant 900 ze scalonymi konturami — używany wyłącznie do obrysu w hero.
+   Subset: litery imienia i nazwiska. */
+@font-face {
+  font-family: 'Unbounded Outline';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/unbounded-outline.woff2') format('woff2');
+}

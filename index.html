@@ -1,163 +1,668 @@
 <!doctype html>
 <html lang="pl">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <meta name="description" content="Trener personalny Kacper Olszewski">
-      <meta name="author" content="Adam Kordalski">
-      <title>Kacper Olszewski - trener personalny Gdynia</title>     
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/bootstrap-icons.css" rel="stylesheet">
-      <link href="css/main.css" rel="stylesheet">
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6W3L96HBC0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Bezpieczeństwo — statyczny GitHub Pages nie pozwala ustawiać
+       nagłówków HTTP, więc to, co da się wymusić z poziomu <meta>, jest tu
+       wymuszone. X-Content-Type-Options i Permissions-Policy nie mają
+       odpowiednika meta obsługiwanego przez przeglądarki — wymagają
+       nagłówka HTTP (np. z reverse proxy typu Cloudflare przed domeną). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
-  gtag('config', 'G-6W3L96HBC0');
-</script>
-   </head>
+  <title>Kacper Olszewski | Trener MMA, Sporty Walki – Rumia, Gdynia</title>
+  <meta name="description" content="Trener personalny i zawodnik MMA w Rumi i Gdyni. Treningi sportów walki dla każdego poziomu, 7 dni w tygodniu na terenie Trójmiasta. Zadzwoń i umów trening!">
+  <meta name="author" content="Adam Kordalski">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#161616">
+  <link rel="canonical" href="https://kacperolszewski.pl/">
 
-   <body>
-      <div class="container-fluid">
-        <div class="row">
-            <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block sidebar collapse p-0">
-                <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-center align-items-center">
-                    <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_1">Strona Główna</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_2">O mnie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_3">Kontakt</a>
-                    </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="col-md-8 ms-sm-auto col-lg-9 p-0">
-                <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                    <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-12">
-                            <h1 class="kacper-name mb-lg-3 mb-4"><strong>Kacper <em>Olszewski</em></strong></h1>
-                            <p class="text-black">Twój trener sportów walki</p>
-                            <p class="text-black">📍Rumia</p>
-                            <p class="text-black">📍Gdynia</p>
-                            <br>
-                            <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_2">O mnie</a>
-                            <a class="btn custom-btn smoothscroll mb-2" href="#section_3">Kontakt</a>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="custom-block d-lg-flex flex-column justify-content-center align-items-center">
-                    <img src="images/pas.png" class="custom-block-image img-fluid" alt="">
-                    <h4><strong class="kacper-name">Zadzwoń 537 858 336</strong></h4>
-                    </div>
-                </section>
-                <section class="about-section section-padding" id="section_2">
-                    <div class="container">
-                    <div class="row">
-                        <div class="image-container">
-                            <img src="images/boks.png" alt="Obraz 1">
-                            <img src="images/tarcze.png" alt="Obraz 2">
-                        </div>
-                        <div class="col-lg-12 col-12 mx-auto">
-                            <h2 class="mb-4">O mnie</h2>
-                            <div class="border-bottom pb-3 mb-5">
-                                <p>
-                                Nazywam się Kacper Olszewski jestem doświadczonym trenerem personalnym oraz zawodnikiem mieszanych sztuk walki (MMA) z wieloma osiągnięciami na koncie. Moje życie zawodowe związane jest ze sportami walki od wielu lat, a pasja do tego typu aktywności stała się dla mnie nie tylko drogą kariery, ale także filozofią życia.
-                                Jako zawodnik MMA, mam za sobą liczne starty w krajowych organizacjach, zdobywając doświadczenie, które pozwala mi dzielić się swoją wiedzą z innymi. Moje podejście do treningów opiera się na rzetelnej technice, mentalnej wytrzymałości oraz indywidualnym podejściu do każdego z moich podopiecznych. Znam wszystkie aspekty tego sportu, od walki stójkowej po zapasy i parter, co pozwala mi dostosować programy treningowe do Twoich indywidualnych celów.
-                                Jako trener personalny, łączę moją wiedzę z zakresu sportów walki z naukowym podejściem do treningu, dbając o Twoje bezpieczeństwo, efektywność i postępy. Bez względu na to, czy chcesz poprawić swoją kondycję, przygotować się do walki, czy po prostu nauczyć się skutecznej samoobrony.
-                                </p>
-                            </div>
-                        </div>
-                        <h6 class="mb-5">
-                            Zapraszam Cię do współpracy. Wspólnie możemy osiągnąć wszystko, co sobie zaplanujesz!
-                        </h6>
-                    </div>
-                    </div>
-                </section>
-                <p>🚀W mojej ofercie znajdziesz </br>
-                    ✅ Treningi Indywidualne - dopasowane do Twoich celów i potrzeb. </br>
-                    ✅ Zajęcia Grupowe - motywująca atmosfera i wspólna praca w zespole.</br>
-                    ✅ Treningi w Parach - idealne dla osób, które preferują wspólne ćwiczenia. </br>
-                    ✅ Programy dedykowane dla osób początkujących, średniozaawansowanych oraz  zaawansowanych. </br>
-                    ✅ Treningi dla mężczyzn, kobiet, młodzieży oraz dzieci.</br>
-                    ✅ Posiadam pełne wyposażenie treningowe, które mogę udostępnić, jeśli nie masz swojego sprzętu.</br>
-                   
-                </p>
-                <section class="about-section section-padding" id="section_3">
-                    <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <h5 class="mb-3"> Kontakt ze mną</h5>
-                            <p class="text-white d-flex mb-1">
-                                <a href="tel:537 858 336" class="site-footer-link"> 
-                                537 858 336
-                                </a>
-                            </p>
-                            <p class="text-white d-flex">
-                                <a href="mailto:oolszewskikacper97@gmail.com" class="site-footer-link">
-                                oolszewskikacper97@gmail.com
-                                </a>
-                            </p>
-                            <ul class="social-icon">
-                                <li class="social-icon-item">
-                                <a href="https://www.facebook.com/kacper.olszewski.332" class="social-icon-link bi-facebook">
-                                </a>
-                                </li>
-                                <li class="social-icon-item">
-                                <a href="https://www.instagram.com/arni_mma/" class="social-icon-link bi-instagram">
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-5 col-12 contact-block-wrap mt-5 mt-lg-0 pt-4 pt-lg-0 mx-auto">
-                            <div class="contact-block">
-                                <h6 class="mb-0">
-                                <i class="custom-icon bi-shop me-3"></i>
-                                <strong>Zajecia 7 dni w tygodniu</strong>
-                                <span class="text-dark">Terminy indywidualnie</span>
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </section>
-                
-                <footer class="site-footer">
-                    <div class="container">
-                    <div class="row">
-                    </div>
-                    </div>
-                    <div class="site-footer-bottom">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-2 col-md-3 col-3 mt-lg-4 ms-auto">
-                                <a href="#section_1" class="back-top-icon smoothscroll" title="Back Top">
-                                <i class="bi-arrow-up-circle"></i>
-                                </a>
-                            </div>
-                            <span>© Copyright 2025 Adam Kordalski</span>
-                    </div>
-                    </div>
-                </footer>
-            </div>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:url" content="https://kacperolszewski.pl/">
+  <meta property="og:site_name" content="Kacper Olszewski">
+  <meta property="og:title" content="Kacper Olszewski | Trener MMA, Sporty Walki – Rumia, Gdynia">
+  <meta property="og:description" content="Trener personalny i zawodnik MMA w Rumi i Gdyni. Treningi sportów walki dla każdego poziomu, 7 dni w tygodniu na terenie Trójmiasta. Zadzwoń i umów trening!">
+  <meta property="og:image" content="https://kacperolszewski.pl/images/hero-1440.jpg">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="959">
+  <meta property="og:image:alt" content="Trener MMA Kacper Olszewski podczas ważenia przed galą">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kacper Olszewski | Trener MMA, Sporty Walki – Rumia, Gdynia">
+  <meta name="twitter:description" content="Trener personalny i zawodnik MMA w Rumi i Gdyni. Treningi sportów walki 7 dni w tygodniu na terenie Trójmiasta.">
+  <meta name="twitter:image" content="https://kacperolszewski.pl/images/hero-1440.jpg">
+  <meta name="twitter:image:alt" content="Trener MMA Kacper Olszewski podczas ważenia przed galą">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+
+  <link rel="preload" as="font" type="font/woff2" href="fonts/unbounded.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/inter.woff2" crossorigin>
+  <link rel="preload" as="image" media="(max-width: 640px)" href="images/hero-p-640.webp"
+        imagesrcset="images/hero-p-640.webp 640w, images/hero-p-900.webp 900w" imagesizes="100vw">
+  <link rel="preload" as="image" media="(min-width: 641px)" href="images/hero-1440.webp"
+        imagesrcset="images/hero-640.webp 640w, images/hero-1024.webp 1024w, images/hero-1440.webp 1440w"
+        imagesizes="100vw">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) — konfiguracja w js/gtag-init.js (bez inline JS,
+       żeby CSP script-src mogła obejść się bez 'unsafe-inline') -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W3L96HBC0"></script>
+  <script src="js/gtag-init.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#o-mnie">Przejdź do treści</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.6c-.3 0-1.2-.1-2.3-.1-2.4 0-4 1.4-4 4.1v1.9H8V12h2.7v9H14v-9h2.6l.4-3.5H14z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.8a6 6 0 100 12 6 6 0 000-12zm0 9.9a3.9 3.9 0 110-7.8 3.9 3.9 0 010 7.8zm7.6-10.1a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2c-4.42 0-8 3.58-8 8 0 5.25 7.25 11.34 7.56 11.6a.75.75 0 00.88 0C12.75 21.34 20 15.25 20 10c0-4.42-3.58-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></symbol>
+  </svg>
+
+  <!-- ============================= NAWIGACJA ============================= -->
+  <header class="site-header" id="header">
+    <div class="shell site-header__inner">
+      <div class="site-header__lead">
+        <a class="brand" href="#home">Kacper Olszewski</a>
+
+        <ul class="socials socials--inline">
+          <li>
+            <a href="https://www.facebook.com/kacper.olszewski.332" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg aria-hidden="true" focusable="false"><use href="#i-fb"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/arni_mma/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @arni_mma">
+              <svg aria-hidden="true" focusable="false"><use href="#i-ig"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Nawigacja główna">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Start</a></li>
+          <li><a class="nav__link" href="#o-mnie">O mnie</a></li>
+          <li><a class="nav__link" href="#osiagniecia">Osiągnięcia</a></li>
+          <li><a class="nav__link" href="#oferta">Oferta</a></li>
+          <li><a class="nav__link" href="#faq">FAQ</a></li>
+          <li><a class="nav__link" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Złota rękawica — dekoracyjny akcent, pojawia się po rozpoczęciu scrolla
+       i przesuwa się w prawo wraz z nim; cienka kreska rysuje się za nią na
+       tej samej krawędzi -->
+  <div class="glove-trail" id="glove-trail" aria-hidden="true"></div>
+  <div class="glove" id="glove" aria-hidden="true">
+    <img src="images/glove-gold.webp" alt="" width="220" height="156">
+  </div>
+
+  <main>
+    <!-- =============================== HERO =============================== -->
+    <section class="hero" id="home">
+      <div class="hero__media">
+        <picture>
+          <source media="(max-width: 640px)" type="image/webp"
+                  srcset="images/hero-p-640.webp 640w, images/hero-p-900.webp 900w" sizes="100vw">
+          <source media="(max-width: 640px)"
+                  srcset="images/hero-p-640.jpg 640w, images/hero-p-900.jpg 900w" sizes="100vw">
+          <source type="image/webp"
+                  srcset="images/hero-640.webp 640w, images/hero-1024.webp 1024w, images/hero-1440.webp 1440w"
+                  sizes="100vw">
+          <img src="images/hero-1440.jpg"
+               srcset="images/hero-640.jpg 640w, images/hero-1024.jpg 1024w, images/hero-1440.jpg 1440w"
+               sizes="100vw" alt="Trener MMA Kacper Olszewski podczas ważenia przed galą — treningi w Rumi i Gdyni"
+               width="1440" height="959" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+
+      <div class="shell hero__content">
+        <p class="eyebrow hero__eyebrow">Trener personalny &middot; Zawodnik MMA</p>
+
+        <h1 class="hero__title">
+          <span class="sr-only">Trener MMA i sportów walki w Rumi i Gdyni — </span>
+          <span class="hero__title-outline" aria-hidden="true">Kacper</span>
+          <span aria-hidden="true">Olszewski</span>
+          <span class="sr-only">Kacper Olszewski</span>
+        </h1>
+
+        <p class="hero__tagline">
+          <span>Twój trener sportów walki</span>
+          <span>MMA</span>
+          <span>Performance</span>
+        </p>
+
+        <p class="hero__locations">
+          <span>Rumia</span>
+          <span>Gdynia</span>
+        </p>
+
+        <div class="hero__find">
+          <span class="hero__find-label">Znajdź mnie tutaj</span>
+          <ul class="socials socials--hero">
+            <li>
+              <a href="https://www.facebook.com/kacper.olszewski.332" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg aria-hidden="true" focusable="false"><use href="#i-fb"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/arni_mma/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @arni_mma">
+                <svg aria-hidden="true" focusable="false"><use href="#i-ig"/></svg>
+              </a>
+            </li>
+          </ul>
         </div>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/click-scroll.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#kontakt">Umów trening</a>
+          <a class="btn btn--outline" href="#oferta">Oferta</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#o-mnie" aria-label="Przewiń w dół"><span></span></a>
+    </section>
+
+    <!-- ============================== O MNIE ============================== -->
+    <section class="section" id="o-mnie">
+      <div class="shell">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">01</span> O mnie</p>
+          <h2 class="section__title">Technika, skupienie <br>i realne postępy</h2>
+        </header>
+
+        <div class="about">
+          <figure class="figure figure--portrait" data-reveal>
+            <picture>
+              <source type="image/webp" srcset="images/boks-380.webp 380w, images/boks-760.webp 760w" sizes="340px">
+              <img src="images/boks-760.jpg" srcset="images/boks-380.jpg 380w, images/boks-760.jpg 760w"
+                   sizes="340px" alt="Trener personalny Kacper Olszewski w pozycji bokserskiej podczas treningu boksu"
+                   width="760" height="1139" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+
+          <div class="about__text" data-reveal>
+            <p class="lead">
+              Nazywam się Kacper Olszewski. Jestem trenerem personalnym i zawodnikiem MMA
+              w Rumi i Gdyni, z wieloletnim doświadczeniem oraz realnymi startami
+              w krajowych organizacjach.
+            </p>
+            <p>
+              Trenuję już od 15 lat — pierwsze 5 lat spędziłem na siłowni, budując bazę
+              w kulturystyce, a od kolejnych 10 lat trenuję sporty walki, które stały się
+              moją największą pasją. To nie tylko praca — to styl życia, który napędza mnie
+              każdego dnia. Łączę solidną technikę (stójka, zapasy, parter), mentalne
+              skupienie i indywidualne podejście do każdego podopiecznego.
+            </p>
+            <p>
+              Niezależnie czy chcesz zbudować formę, przygotować się do walki, nauczyć się
+              skutecznej samoobrony, czy po prostu wyładować stres i zyskać pewność siebie —
+              dopasuję trening do Twoich celów.
+            </p>
+            <p>
+              Bezpieczeństwo, efektywność i realne postępy — to standard, którego wymagam
+              od siebie i od Ciebie.
+            </p>
+
+            <blockquote class="pull-quote">
+              Zapraszam do współpracy. Razem osiągniemy to, co sobie zaplanujesz.
+            </blockquote>
+
+            <ul class="facts">
+              <li><strong>MMA</strong><span>Stójka &middot; zapasy &middot; parter</span></li>
+              <li><strong>7 dni</strong><span>w tygodniu</span></li>
+              <li class="facts__wide"><strong>Rumia &middot; Gdynia</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== OSIĄGNIĘCIA ============================ -->
+    <section class="section section--alt" id="osiagniecia">
+      <div class="shell">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">02</span> Moje osiągnięcia</p>
+          <h2 class="section__title">Kilka rzeczy, <br>z których jestem dumny</h2>
+        </header>
+
+        <ul class="wins">
+          <li class="win" data-reveal>
+            <figure class="win__media">
+              <picture>
+                <source type="image/webp" srcset="images/fen-400.webp 400w, images/fen-800.webp 800w" sizes="(min-width: 900px) 33vw, 92vw">
+                <img src="images/fen-800.jpg" srcset="images/fen-400.jpg 400w, images/fen-800.jpg 800w"
+                     sizes="(min-width: 900px) 33vw, 92vw" alt="Zawodnik MMA Kacper Olszewski wychodzi do walki na gali FEN"
+                     width="800" height="800" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <div class="win__body">
+              <h3 class="win__title">Wygrana walka w federacji FEN</h3>
+              <p class="win__text">
+                Zwycięstwo w Fight Exclusive Night — jednej z największych
+                organizacji MMA w Polsce.
+              </p>
+            </div>
+          </li>
+
+          <li class="win" data-reveal>
+            <figure class="win__media">
+              <picture>
+                <source type="image/webp" srcset="images/pas-400.webp 400w, images/pas-800.webp 800w" sizes="(min-width: 900px) 33vw, 92vw">
+                <img src="images/pas-800.jpg" srcset="images/pas-400.jpg 400w, images/pas-800.jpg 800w"
+                     sizes="(min-width: 900px) 33vw, 92vw" alt="Trener MMA Kacper Olszewski z pasem mistrzowskim Gladiator Arena"
+                     width="800" height="800" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <div class="win__body">
+              <h3 class="win__title">Mistrz Gladiator Arena</h3>
+              <p class="win__text">
+                Pas mistrzowski wywalczony w kategorii do 84 kg.
+              </p>
+            </div>
+          </li>
+
+          <li class="win" data-reveal>
+            <figure class="win__media">
+              <picture>
+                <source type="image/webp" srcset="images/bjj-400.webp 400w, images/bjj-800.webp 800w" sizes="(min-width: 900px) 33vw, 92vw">
+                <img src="images/bjj-800.jpg" srcset="images/bjj-400.jpg 400w, images/bjj-800.jpg 800w"
+                     sizes="(min-width: 900px) 33vw, 92vw" alt="Kacper Olszewski podczas ceremonii nadania niebieskiego pasa Jiu-Jitsu"
+                     width="800" height="800" loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <div class="win__body">
+              <h3 class="win__title">Niebieski pas Jiu-Jitsu</h3>
+              <p class="win__subtitle">Brazylijskie jiu-jitsu</p>
+              <p class="win__text">
+                Kolejny stopień potwierdzający technikę i pracę w parterze.
+              </p>
+            </div>
+          </li>
+
+          <li class="win" data-reveal>
+            <div class="win__media win__media--stat" role="img" aria-label="Bilans walk: 16 wygranych, 2 porażki">
+              <span class="win__stat" aria-hidden="true">
+                <span class="win__stat-num win__stat-num--win">16</span>
+                <span class="win__stat-sep">–</span>
+                <span class="win__stat-num win__stat-num--loss">2</span>
+              </span>
+              <span class="win__stat-labels" aria-hidden="true">
+                <span>Wygrane</span>
+                <span>Porażki</span>
+              </span>
+            </div>
+            <div class="win__body">
+              <h3 class="win__title">Bilans walk</h3>
+              <p class="win__text">16 wygranych, 2 porażki.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== OFERTA ============================== -->
+    <section class="section" id="oferta">
+      <div class="shell">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">03</span> Oferta</p>
+          <h2 class="section__title">Trening dopasowany <br>do Twojego celu</h2>
+          <p class="section__lead">
+            Prowadzę treningi MMA, boksu i innych sportów walki dla mieszkańców Rumi,
+            Gdyni i całego Trójmiasta — od pierwszych kroków po przygotowania startowe.
+          </p>
+        </header>
+
+        <div class="offer">
+          <figure class="figure figure--portrait" data-reveal>
+            <picture>
+              <source type="image/webp" srcset="images/tarcze-380.webp 380w, images/tarcze-760.webp 760w" sizes="340px">
+              <img src="images/tarcze-760.jpg" srcset="images/tarcze-380.jpg 380w, images/tarcze-760.jpg 760w"
+                   sizes="340px" alt="Trener MMA Kacper Olszewski z tarczami treningowymi na sali w Rumi"
+                   width="760" height="1139" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+
+          <div class="offer__body">
+            <ul class="cards">
+              <li class="card" data-reveal>
+                <span class="card__num">01</span>
+                <h3 class="card__title">Treningi indywidualne</h3>
+                <p class="card__text">Pełna uwaga trenera i plan skrojony pod Twoje cele, poziom i tempo postępów.</p>
+              </li>
+              <li class="card" data-reveal>
+                <span class="card__num">02</span>
+                <h3 class="card__title">Zajęcia grupowe</h3>
+                <p class="card__text">Motywująca atmosfera, zdrowa rywalizacja i wspólna praca w zespole.</p>
+              </li>
+              <li class="card" data-reveal>
+                <span class="card__num">03</span>
+                <h3 class="card__title">Treningi w parach</h3>
+                <p class="card__text">Idealne dla osób, które wolą trenować razem — z partnerem, przyjacielem lub bliskim.</p>
+              </li>
+              <li class="card" data-reveal>
+                <span class="card__num">04</span>
+                <h3 class="card__title">Od podstaw do zaawansowanych</h3>
+                <p class="card__text">Programy dla początkujących, średniozaawansowanych i zawodników w przygotowaniu.</p>
+              </li>
+              <li class="card" data-reveal>
+                <span class="card__num">05</span>
+                <h3 class="card__title">Dla każdego</h3>
+                <p class="card__text">Treningi dla mężczyzn, kobiet, młodzieży i dzieci — z odpowiednim doborem intensywności.</p>
+              </li>
+              <li class="card" data-reveal>
+                <span class="card__num">06</span>
+                <h3 class="card__title">Pełne wyposażenie</h3>
+                <p class="card__text">Dysponuję kompletnym sprzętem treningowym — nie musisz mieć własnego.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="venue" data-reveal>
+          <span class="venue__icon" aria-hidden="true">
+            <svg><use href="#i-pin"/></svg>
+          </span>
+          <div>
+            <h3 class="venue__title">Salka treningowa w Rumi</h3>
+            <p class="venue__text">
+              Zapraszam do mojej w pełni wyposażonej, kameralnej salki w Rumi. Trenujemy
+              w spokoju, bez zbędnych rozpraszaczy – dzięki temu w pełni skupiamy się
+              na technice, rozwoju i Twoich celach.
+            </p>
+          </div>
+        </div>
+
+        <p class="notice" data-reveal>
+          <span>Treningi 7 dni w tygodniu</span>
+          <span>Terminy indywidualne</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- =============================== FAQ ================================= -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="shell">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">04</span> FAQ</p>
+          <h2 class="section__title" id="faq-title">Najczęściej zadawane <br>pytania</h2>
+        </header>
+
+        <div class="faq" data-reveal>
+          <details class="faq__item">
+            <summary class="faq__q">
+              <h3 class="faq__q-text">Czy potrzebuję własny sprzęt na treningi?</h3>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__a-wrap">
+              <div class="faq__a">
+                <p>
+                  Na początek nie musisz niczego kupować – pełne wyposażenie jest dostępne
+                  na miejscu. Jeśli jednak planujesz trenować regularnie przez dłuższy czas,
+                  warto zainwestować we własne rękawice bokserskie (oraz owijki). Będzie to
+                  wygodniejsze i bardziej higieniczne.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__q">
+              <h3 class="faq__q-text">Czy treningi są tylko dla osób, które chcą startować w zawodach?</h3>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__a-wrap">
+              <div class="faq__a">
+                <p>
+                  Nie. Większość osób trenuje wyłącznie dla siebie – żeby poprawić kondycję,
+                  zbudować pewność siebie, nauczyć się podstaw samoobrony, zredukować stres
+                  lub po prostu poczuć się sprawniej. Starty w zawodach są możliwością,
+                  a nie obowiązkiem.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__q">
+              <h3 class="faq__q-text">Jak często warto trenować, żeby zobaczyć efekty?</h3>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__a-wrap">
+              <div class="faq__a">
+                <p>
+                  Najlepsze i najbardziej zauważalne efekty pojawiają się przy 2–3 treningach
+                  w tygodniu. Przy takiej częstotliwości szybko zauważysz poprawę kondycji,
+                  techniki i samopoczucia. Ostateczna liczba treningów zawsze zależy od
+                  Twoich celów i możliwości czasowych.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__q">
+              <h3 class="faq__q-text">Czy trzeba być pełnoletnim, żeby zacząć trenować?</h3>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__a-wrap">
+              <div class="faq__a">
+                <p>
+                  Nie. Treningi są dostępne również dla młodzieży. W przypadku osób
+                  niepełnoletnich wymagana jest zgoda rodzica lub opiekuna prawnego.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__q">
+              <h3 class="faq__q-text">Gdzie odbywają się treningi i czy dojedziesz z Gdyni?</h3>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__a-wrap">
+              <div class="faq__a">
+                <p>
+                  Treningi prowadzę w mojej kameralnej salce w Rumi, kilkanaście minut
+                  od Gdyni i dobrze skomunikowanej z resztą Trójmiasta. Trenują u mnie
+                  osoby dojeżdżające z Gdyni, Redy, Wejherowa i okolic — lokalizacja
+                  w Rumi jest wygodnym punktem dla całej zachodniej części Trójmiasta.
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= KONTAKT ============================== -->
+    <section class="section section--alt" id="kontakt">
+      <div class="shell">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">05</span> Kontakt</p>
+          <h2 class="section__title">Zaczynamy?</h2>
+        </header>
+
+        <div class="contact" data-reveal>
+          <div class="contact__main">
+            <a class="contact__phone" href="tel:+48537858336">
+              <span class="contact__phone-label">Zadzwoń i umów trening</span>
+              <span class="contact__phone-number">537 858 336</span>
+            </a>
+            <a class="btn btn--primary btn--lg" href="tel:+48537858336">Zadzwoń teraz</a>
+          </div>
+
+          <div class="contact__side">
+            <a class="contact__mail" href="mailto:oolszewskikacper97@gmail.com">
+              oolszewskikacper97@gmail.com
+            </a>
+
+            <ul class="socials">
+              <li>
+                <a href="https://www.facebook.com/kacper.olszewski.332" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <svg aria-hidden="true" focusable="false"><use href="#i-fb"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/arni_mma/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @arni_mma">
+                  <svg aria-hidden="true" focusable="false"><use href="#i-ig"/></svg>
+                </a>
+              </li>
+            </ul>
+
+            <p class="contact__where">
+              Treningi w <strong>Rumi</strong> i <strong>Gdyni</strong>.<br>
+              7 dni w tygodniu, terminy ustalamy indywidualnie.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer__top">
+      <div class="footer__col footer__col--brand">
+        <a class="footer__brand" href="#home">Kacper Olszewski</a>
+        <p class="footer__tagline">Trener personalny &middot; Zawodnik MMA</p>
+      </div>
+
+      <nav class="footer__col footer__col--nav" aria-label="Nawigacja w stopce">
+        <p class="footer__col-title">Nawigacja</p>
+        <ul class="footer__links">
+          <li><a href="#home">Start</a></li>
+          <li><a href="#o-mnie">O mnie</a></li>
+          <li><a href="#osiagniecia">Osiągnięcia</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col footer__col--contact">
+        <p class="footer__col-title">Kontakt</p>
+        <a class="footer__contact-item" href="tel:+48537858336">537 858 336</a>
+        <a class="footer__contact-item" href="mailto:oolszewskikacper97@gmail.com">oolszewskikacper97@gmail.com</a>
+        <p class="footer__contact-item footer__contact-item--muted">Rumia <span aria-hidden="true">&bull;</span> Gdynia</p>
+      </div>
+    </div>
+
+    <div class="shell">
+      <p class="site-footer__area">
+        Zapraszam osoby z całego Trójmiasta i okolic: Gdańsk, Gdynia, Sopot, Rumia,
+        Reda, Wejherowo, Puck i okolice.
+      </p>
+    </div>
+
+    <div class="shell footer__bottom">
+      <p class="footer__copy">&copy; <span id="year">2025</span> Adam Kordalski</p>
+      <a class="site-footer__top" href="#home" aria-label="Wróć na górę">Na górę &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Sticky pasek kontaktowy (mobile) -->
+  <div class="callbar">
+    <p class="callbar__note">Razem osiągniemy więcej!</p>
+    <a class="callbar__item callbar__item--quiet" href="tel:+48537858336">Zadzwoń</a>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Kacper Olszewski — trener sportów walki i MMA",
+    "url": "https://kacperolszewski.pl/",
+    "image": "https://kacperolszewski.pl/images/hero-1440.jpg",
+    "telephone": "+48537858336",
+    "email": "oolszewskikacper97@gmail.com",
+    "areaServed": ["Rumia", "Gdynia", "Gdańsk", "Sopot", "Reda", "Wejherowo", "Puck"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Rumia", "addressRegion": "pomorskie", "addressCountry": "PL" },
+    "sameAs": [
+      "https://www.facebook.com/kacper.olszewski.332",
+      "https://www.instagram.com/arni_mma/"
+    ],
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Czy potrzebuję własny sprzęt na treningi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Na początek nie musisz niczego kupować – pełne wyposażenie jest dostępne na miejscu. Jeśli jednak planujesz trenować regularnie przez dłuższy czas, warto zainwestować we własne rękawice bokserskie (oraz owijki). Będzie to wygodniejsze i bardziej higieniczne."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy treningi są tylko dla osób, które chcą startować w zawodach?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nie. Większość osób trenuje wyłącznie dla siebie – żeby poprawić kondycję, zbudować pewność siebie, nauczyć się podstaw samoobrony, zredukować stres lub po prostu poczuć się sprawniej. Starty w zawodach są możliwością, a nie obowiązkiem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak często warto trenować, żeby zobaczyć efekty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Najlepsze i najbardziej zauważalne efekty pojawiają się przy 2–3 treningach w tygodniu. Przy takiej częstotliwości szybko zauważysz poprawę kondycji, techniki i samopoczucia. Ostateczna liczba treningów zawsze zależy od Twoich celów i możliwości czasowych."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy trzeba być pełnoletnim, żeby zacząć trenować?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nie. Treningi są dostępne również dla młodzieży. W przypadku osób niepełnoletnich wymagana jest zgoda rodzica lub opiekuna prawnego."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gdzie odbywają się treningi i czy dojedziesz z Gdyni?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Treningi prowadzę w mojej kameralnej salce w Rumi, kilkanaście minut od Gdyni i dobrze skomunikowanej z resztą Trójmiasta. Trenują u mnie osoby dojeżdżające z Gdyni, Redy, Wejherowa i okolic — lokalizacja w Rumi jest wygodnym punktem dla całej zachodniej części Trójmiasta."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kacper Olszewski",
+    "jobTitle": "Trener personalny i zawodnik MMA",
+    "description": "Trener personalny i zawodnik MMA prowadzący treningi sportów walki w Rumi i Gdyni, na terenie Trójmiasta.",
+    "url": "https://kacperolszewski.pl/",
+    "image": "https://kacperolszewski.pl/images/hero-1440.jpg",
+    "email": "oolszewskikacper97@gmail.com",
+    "telephone": "+48537858336",
+    "address": { "@type": "PostalAddress", "addressLocality": "Rumia", "addressRegion": "pomorskie", "addressCountry": "PL" },
+    "sameAs": [
+      "https://www.facebook.com/kacper.olszewski.332",
+      "https://www.instagram.com/arni_mma/"
+    ]
+  }
+  </script>
+
+  <script src="js/main.js" defer></script>
+</body>
 </html>
