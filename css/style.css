@@ -525,37 +525,32 @@ body.is-locked .glove-trail { opacity: 0; }
   color: var(--text);
   animation: rise 1s .32s var(--ease) both;
 }
-.hero__tagline span { position: relative; }
+/* dyscypliny (Boks/Kickboxing/...) — nieco mniejsze niż zdanie wstępne,
+   z niebieską kropką przed każdą, zamiast pionowej kreski */
+.hero__tagline span + span {
+  font-size: .8em;
+  letter-spacing: .04em;
+}
 .hero__tagline span + span::before {
-  content: "|";
-  position: absolute;
-  left: -.85rem;
-  color: var(--blue);
+  content: "\2022";
+  margin-right: .55em;
+  color: var(--blue-lift);
 }
 
+/* odznaka lokalizacji — kolor i ikonka pinezki wyraźnie odróżniają ją od
+   listy dyscyplin nad nią, zamiast zlewać się w tej samej bieli */
 .hero__locations {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  align-items: center;
+  gap: .5rem;
   font-size: clamp(1rem, .9rem + .5vw, 1.25rem);
   font-weight: 700;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--blue-lift);
   animation: rise 1s .4s var(--ease) both;
 }
-.hero__locations span { position: relative; }
-.hero__locations span + span::before {
-  content: "";
-  position: absolute;
-  left: -.85rem;
-  top: 50%;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--blue);
-  transform: translateY(-50%);
-}
+.hero__locations-icon { width: 18px; height: 18px; flex: none; fill: var(--blue-lift); }
 
 .hero__find {
   display: flex;
@@ -1468,9 +1463,8 @@ a.footer__contact-item:hover { color: var(--blue-lift); }
   .hero__content { gap: 1rem; }
   .hero__eyebrow { font-size: .6875rem; letter-spacing: .18em; }
 
-  /* separatory „|” osierociłyby się przy łamaniu wiersza */
-  .hero__tagline { flex-direction: column; gap: .15rem; }
-  .hero__tagline span + span::before { display: none; }
+  /* w kolumnie kropki przed każdą dyscypliną zostają — czytają się jak lista */
+  .hero__tagline { flex-direction: column; gap: .3rem; }
 
   /* dwa CTA w jednym wierszu */
   .hero__actions { flex-wrap: nowrap; width: 100%; }
