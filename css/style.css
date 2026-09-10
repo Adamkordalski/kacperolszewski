@@ -537,11 +537,11 @@ body.is-locked .glove-trail { opacity: 0; }
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  font-size: .8125rem;
-  font-weight: 500;
-  letter-spacing: .2em;
+  font-size: clamp(1rem, .9rem + .5vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--text-2);
+  color: var(--text);
   animation: rise 1s .4s var(--ease) both;
 }
 .hero__locations span { position: relative; }
