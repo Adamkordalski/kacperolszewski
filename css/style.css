@@ -721,7 +721,7 @@ body.is-locked .glove-trail { opacity: 0; }
   text-transform: uppercase;
   color: var(--text);
 }
-.facts__disciplines span + span::before {
+.facts__disciplines span::before {
   content: "\2022";
   margin-right: .5em;
   font-weight: 400;
