@@ -705,13 +705,13 @@ body.is-locked .glove-trail { opacity: 0; }
 }
 
 /* lista dyscyplin — wszystkie tą samą, dużą czcionką co reszta faktów,
-   same duże litery, bez separatorów — same odstępy robią porządek */
+   wielkie litery, oddzielone niebieską kropką (ten sam język co w Hero) */
 .facts li.facts__disciplines {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   row-gap: .35rem;
-  column-gap: 1.25rem;
+  column-gap: 1rem;
 }
 .facts__wide.facts__disciplines span {
   font-family: var(--font-display);
@@ -720,6 +720,12 @@ body.is-locked .glove-trail { opacity: 0; }
   letter-spacing: .01em;
   text-transform: uppercase;
   color: var(--text);
+}
+.facts__disciplines span + span::before {
+  content: "\2022";
+  margin-right: .5em;
+  font-weight: 400;
+  color: var(--blue-lift);
 }
 
 /* --------------------------------------------------------- OSIĄGNIĘCIA */
