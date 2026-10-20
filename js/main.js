@@ -129,4 +129,115 @@
 
     window.addEventListener('resize', function () { measureGlove(); updateGlove(); }, { passive: true });
   }
+
+  /* ------------------------------------------------- 6. FILM (ROLKA 9:16) */
+  var reel = document.getElementById('reel');
+  var video = document.getElementById('reel-video');
+  var soundBtn = document.getElementById('reel-sound');
+  var playBtn = document.getElementById('reel-play');
+
+  if (reel && video && soundBtn && playBtn && 'IntersectionObserver' in window) {
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var soundIcon = soundBtn.querySelector('use');
+    var started = false;     /* czy po przewinięciu była już próba autostartu */
+    var userPaused = false;  /* użytkownik sam zatrzymał — nie wznawiamy za niego */
+    var userMuted = false;   /* użytkownik sam wyciszył */
+
+    /* Odtwarzanie z jednym awaryjnym ponowieniem: jeśli przeglądarka odrzuci
+       start z dźwiękiem (brak gestu użytkownika), lecimy wyciszeni. */
+    var play = function () {
+      var p = video.play();
+      if (!p || !p.catch) return;
+      p.catch(function () {
+        if (video.muted) return;
+        video.muted = true;
+        var q = video.play();
+        if (q && q.catch) q.catch(function () {});
+      });
+    };
+
+    /* JS działa → własny interfejs zamiast natywnych kontrolek */
+    video.controls = false;
+    video.setAttribute('tabindex', '0');
+    reel.classList.add('reel--js');
+
+    var syncUi = function () {
+      var muted = video.muted;
+      reel.classList.toggle('is-paused', video.paused);
+      /* wyróżniony „Włącz dźwięk" tylko gdy to przeglądarka wyciszyła film */
+      soundBtn.setAttribute('data-muted', String(muted && !userMuted));
+      soundBtn.setAttribute('aria-label', muted ? 'Włącz dźwięk' : 'Wycisz');
+      soundIcon.setAttribute('href', muted ? '#i-vol-off' : '#i-vol-on');
+    };
+
+    /* Próba z dźwiękiem; przeglądarki (zwłaszcza iOS) bez wcześniejszego
+       dotknięcia strony odrzucają taki autostart — wtedy lecimy wyciszeni. */
+    var startPlayback = function () {
+      if (reduceMotion || userPaused) return;
+      video.muted = false;
+      play();
+    };
+
+    var userPlay = function () {
+      userPaused = false;
+      if (!userMuted) video.muted = false;
+      play();
+    };
+
+    ['play', 'pause', 'ended', 'volumechange'].forEach(function (name) {
+      video.addEventListener(name, syncUi);
+    });
+
+    soundBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      video.muted = !video.muted;
+      userMuted = video.muted;
+      syncUi();
+    });
+
+    playBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      userPlay();
+    });
+
+    var toggle = function () {
+      if (video.paused) {
+        userPlay();
+      } else {
+        userPaused = true;
+        video.pause();
+      }
+    };
+    video.addEventListener('click', toggle);
+    video.addEventListener('keydown', function (e) {
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+
+    /* plik ~4,5 MB — pobieranie rusza dopiero tuż przed ekranem */
+    new IntersectionObserver(function (entries, observer) {
+      if (!entries[0].isIntersecting) return;
+      video.preload = 'auto';
+      observer.disconnect();
+    }, { rootMargin: '0px 0px 1000px 0px' }).observe(reel);
+
+    /* start przy przewinięciu do filmu, pauza gdy zniknie z ekranu */
+    new IntersectionObserver(function (entries) {
+      var ratio = entries[entries.length - 1].intersectionRatio;
+      if (ratio >= 0.6) {
+        if (!started) {
+          started = true;
+          startPlayback();
+        } else if (!userPaused && video.paused && !video.ended) {
+          play();
+        }
+      } else if (ratio < 0.2 && !video.paused) {
+        video.pause();
+      }
+    }, { threshold: [0, 0.2, 0.6] }).observe(reel);
+
+    syncUi();
+  }
 })();
